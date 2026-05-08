@@ -132,6 +132,24 @@ nav a {
     text-decoration: none;
 }
 
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #ffffff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
 /* ANIMACIONES */
 .fade {
     opacity: 0;
@@ -207,8 +225,10 @@ nav a {
 
 </section>
 
-<a href="https://wa.me/523314890745" class="whatsapp">💬</a>
-
+<a href="https://wa.me/523314890745?text=Hola,%20me%20interesa%20recibir%20información%20sobre%20un%20proyecto%20residencial" target="_blank" class="whatsapp-btn">
+    WhatsApp
+</a>
+    
 <script>
 const faders = document.querySelectorAll('.fade');
 
