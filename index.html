@@ -69,6 +69,80 @@ nav a {
     font-family: 'Playfair Display', serif;
 }
 
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    max-width: 700px;
+    z-index: 5;
+}
+
+.hero-content h1 {
+    font-size: 62px;
+    line-height: 1.05;
+    color: white;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    color: #d0d0d0;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 580px;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 40px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}    
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 100px 8%;
+    background: #0d0d0d;
+}
+
+.service-box {
+    text-align: center;
+}
+
+.icon {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.service-box h3 {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #a0a0a0;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
 /* BOTONES */
 .btn {
     border: 1px solid #fff;
@@ -144,6 +218,23 @@ nav a {
     transform: translateY(0);
 }
 
+@media(max-width: 900px) {
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+}
+    
 </style>
 </head>
 
@@ -164,13 +255,58 @@ nav a {
 
 <section class="hero">
 <div>
-<h1>FG Estudio</h1>
-<p>Arquitectura · Paisajismo · Interiorismo</p>
+
+<div class="hero-content">
+
+    <h1>
+        DISEÑAMOS ESPACIOS.<br>
+        CONSTRUIMOS PATRIMONIOS.
+    </h1>
+
+    <p>
+        Arquitectura, paisajismo e interiorismo para quienes entienden 
+        el valor del diseño, la inversión inteligente y el patrimonio 
+        a largo plazo.
+    </p>
+
+    <a href="https://wa.me/523314890745?text=Hola,%20me%20interesa%20recibir%20información%20sobre%20un%20proyecto" target="_blank" class="hero-btn">
+        INICIAR PROYECTO
+    </a>
+
+</div>
 
 <a href="#proyectos" class="btn">Ver proyectos</a>
 </div>
 </section>
 
+<section class="services">
+
+    <div class="service-box">
+        <div class="icon">▢</div>
+        <h3>ARQUITECTURA</h3>
+        <p>Diseño funcional, estético y atemporal</p>
+    </div>
+
+    <div class="service-box">
+        <div class="icon">❋</div>
+        <h3>PAISAJISMO</h3>
+        <p>Conexión entre naturaleza y arquitectura</p>
+    </div>
+
+    <div class="service-box">
+        <div class="icon">◫</div>
+        <h3>INTERIORISMO</h3>
+        <p>Espacios que reflejan tu estilo de vida</p>
+    </div>
+
+    <div class="service-box">
+        <div class="icon">⌂</div>
+        <h3>CONSTRUCCIÓN</h3>
+        <p>Calidad, control y cumplimiento en cada etapa</p>
+    </div>
+
+</section>    
+    
 <section class="section fade" id="proyectos">
 <h2>Proyectos</h2>
 
