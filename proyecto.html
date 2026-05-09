@@ -23,25 +23,26 @@ body {
 
 .slider-container {
     position: relative;
-    width: 90%;
-    margin: 80px auto;
-    overflow: hidden;
+    width: 92%;
+    margin: 100px auto;
 }
 
 .slider {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 82vh;
+    background: #0d0d0d;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .slide {
     position: absolute;
     width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     opacity: 0;
-    transition: opacity 0.6s ease;
-    border-radius: 12px;
+    transition: opacity 1.2s ease;
 }
 
 .slide.active {
@@ -53,29 +54,31 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
+    width: 52px;
+    height: 52px;
     border: none;
-    font-size: 30px;
-    padding: 12px 18px;
-    cursor: pointer;
-    z-index: 10;
     border-radius: 50%;
-    transition: 0.3s;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 20;
+    transition: 0.3s ease;
 }
 
 .prev:hover,
 .next:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.14);
 }
 
 .prev {
-    left: 20px;
+    left: 25px;
 }
 
 .next {
-    right: 20px;
-}    
+    right: 25px;
+}
     
 .gallery {
     display: grid;
@@ -105,20 +108,16 @@ body {
 
     <div class="slider">
 
-        <img src="VRender1.jpg" class="slide active">
-        <img src="VRender2.jpg" class="slide">
-        <img src="VRender3.jpg" class="slide">
-        <img src="VRender4.jpg" class="slide">
-        <img src="VRender5.jpg" class="slide">
-        <img src="VRender6.jpg" class="slide">
-        <img src="VRender7.jpg" class="slide">
-         
+        <img src="proyecto1.jpg" class="slide active">
+        <img src="proyecto2.jpg" class="slide">
+        <img src="proyecto3.jpg" class="slide">
+
     </div>
 
     <button class="next">&#10095;</button>
 
 </div>
-
+    
 </div>
 
 <script>
@@ -161,6 +160,18 @@ prev.addEventListener('click', () => {
     showSlide(current);
 
 });
+
+setInterval(() => {
+
+    current++;
+
+    if(current >= slides.length) {
+        current = 0;
+    }
+
+    showSlide(current);
+
+}, 6000);
 
 </script>
 
