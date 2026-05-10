@@ -166,7 +166,31 @@ body {
 .project-data {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.data-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.data-item span {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.data-item p {
+    color: #9e9e9e;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.data-item.full {
+    grid-column: span 2;
 }
 
 .project-data span {
@@ -240,34 +264,46 @@ body {
             la experiencia de habitar.
         </p>
 
-        <div class="project-data">
+   <div class="project-data">
 
-            <div>
-                <span>UBICACIÓN</span>
-                <p>Tepatitlán, Jalisco</p>
-            </div>
+    <div class="data-row">
 
-            <div>
-                <span>AÑO</span>
-                <p>2025</p>
-            </div>
-
-            <div>
-                <span>TIPO</span>
-                <p>Residencial</p>
-            </div>
-
-            <div>
-                <span>SERVICIOS</span>
-                <p>Arquitectura · Interiorismo · Paisajismo</p>
-            </div>
-
-            <div>
-                <span>ÁREA</span>
-                <p>680 m²</p>
-            </div>
-
+        <div class="data-item">
+            <span>UBICACIÓN</span>
+            <p>Tepatitlán, Jalisco</p>
         </div>
+
+        <div class="data-item">
+            <span>AÑO</span>
+            <p>2025</p>
+        </div>
+
+    </div>
+
+    <div class="data-row">
+
+        <div class="data-item">
+            <span>TIPO</span>
+            <p>Residencia</p>
+        </div>
+
+        <div class="data-item">
+            <span>ÁREA</span>
+            <p>680 m²</p>
+        </div>
+
+    </div>
+
+    <div class="data-row">
+
+        <div class="data-item full">
+            <span>SERVICIOS</span>
+            <p>Arquitectura — Interiorismo — Paisajismo</p>
+        </div>
+
+    </div>
+
+</div>
 
     </div>
 
