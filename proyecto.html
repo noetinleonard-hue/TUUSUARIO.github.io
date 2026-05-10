@@ -266,6 +266,12 @@ body {
         padding: 25px;
     }
 
+    .concept-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 70px;
+    }
+
     .hero {
         height: 55vh;
         background-position: center;
@@ -361,6 +367,45 @@ body {
 
 }
 
+.intro-text {
+    width: 100%;
+    padding: 70px 0 20px;
+}
+
+.intro-text p {
+    color: #d0d0d0;
+    line-height: 2.1;
+    font-size: 18px;
+    max-width: 100%;
+}
+
+.concept-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.concept-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.concept-text h3 {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+.concept-text p {
+    color: #bdbdbd;
+    line-height: 2.1;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+    
 </style>
 </head>
 
@@ -395,13 +440,6 @@ body {
         <h1>VILLA RIVERA</h1>
 
         <h2>VILLA  —  TEPATITLÁN  —  2025</h2>
-
-        <p class="description">
-            Proyecto residencial que combina materiales naturales,
-            iluminación cálida y una arquitectura contemporánea
-            diseñada para integrarse con el entorno y elevar
-            la experiencia de habitar.
-        </p>
 
    <div class="project-data">
 
@@ -446,6 +484,17 @@ body {
 
     </div>
 
+<section class="intro-text">
+
+    <p>
+        Proyecto residencial que combina materiales naturales,
+        iluminación cálida y una arquitectura contemporánea
+        diseñada para integrarse con el entorno y elevar
+        la experiencia de habitar.
+    </p>
+
+</section>
+
 </section>
 
 <div class="slider-container">
@@ -469,6 +518,33 @@ body {
 </div>
     
 </div>
+
+<section class="concept-section">
+
+    <div class="concept-image">
+
+        <img src="VRender8.jpg">
+
+    </div>
+
+    <div class="concept-text">
+
+        <h3>CONCEPTO</h3>
+
+        <p>
+            El concepto parte de integrar la arquitectura con su entorno natural,
+            adecuándose a la topografía del terreno y aprovechando las mejores
+            vistas y orientaciones.
+        </p>
+
+        <p>
+            Se utilizaron materiales nobles como piedra, madera y concreto
+            aparente para una estética contemporánea, cálida y atemporal.
+        </p>
+
+    </div>
+
+</section>
 
 <script>
 
