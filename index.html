@@ -254,7 +254,96 @@ nav a {
         gap: 70px;
     }
 
+    .studio-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 80px 8%;
 }
+
+.studio-content h2 {
+    font-size: 40px;
+}
+
+.why-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+}
+
+/* ---------- ESTUDIO ---------- */
+
+.studio-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    padding: 140px 8%;
+    background: #0d0d0d;
+}
+
+.studio-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.studio-content h2 {
+    color: white;
+    font-size: 54px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.studio-content p {
+    color: #c7c7c7;
+    line-height: 2.1;
+    margin-bottom: 45px;
+    font-size: 17px;
+}
+
+.studio-btn {
+    display: inline-block;
+    padding: 18px 34px;
+    border: 1px solid #d4b27a;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.studio-btn:hover {
+    background: #d4b27a;
+    color: black;
+}
+
+   /* ---------- WHY SECTION ---------- */
+
+.why-section {
+    background: #f3f0ea;
+    padding: 120px 8%;
+    text-align: center;
+}
+
+.why-section h2 {
+    color: black;
+    font-size: 42px;
+    margin-bottom: 70px;
+    font-weight: 600;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.why-item {
+    color: black;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+} 
     
 </style>
 </head>
@@ -268,9 +357,19 @@ nav a {
 </div>
 
 <nav>
-<a href="#">Inicio</a>
-<a href="#proyectos">Proyectos</a>
-<a href="#contacto">Contacto</a>
+
+    <a href="#">INICIO</a>
+
+    <a href="#proyectos">PROYECTOS</a>
+
+    <a href="#estudio">ESTUDIO</a>
+
+    <a href="#servicios">SERVICIOS</a>
+
+    <a href="#procesos">PROCESOS</a>
+
+    <a href="#contacto">CONTACTO</a>
+
 </nav>
 </header>
 
@@ -331,6 +430,59 @@ VER PROYECTOS
     </div>
 
 </section>  
+    
+    <section class="studio-section" id="estudio">
+
+    <div class="studio-image">
+
+        <img src="estudio.jpg">
+
+    </div>
+
+    <div class="studio-content">
+
+        <h2>FG ESTUDIO</h2>
+
+        <p>
+            Somos un estudio de arquitectura y construcción
+            especializado en crear espacios residenciales,
+            campestres y de inversión con una visión contemporánea,
+            funcional y atemporal.
+        </p>
+
+        <a href="estudio.html" class="studio-btn">
+            CONOCE NUESTRO ESTUDIO
+        </a>
+
+    </div>
+
+</section>
+
+    <section class="why-section" id="servicios">
+
+    <h2>¿POR QUÉ ELEGIR EL ESTUDIO?</h2>
+
+    <div class="why-grid">
+
+        <div class="why-item">
+            DISEÑO PERSONALIZADO
+        </div>
+
+        <div class="why-item">
+            ATENCIÓN INTEGRAL
+        </div>
+
+        <div class="why-item">
+            TRANSPARENCIA TOTAL
+        </div>
+
+        <div class="why-item">
+            EXPERIENCIA Y CALIDAD
+        </div>
+
+    </div>
+
+</section>
     
 <section class="section fade" id="proyectos">
 <h2>Proyectos</h2>
